@@ -57,6 +57,31 @@ namespace Lecture_9_Notes
 
         private void btnOrderPizza_Click(object sender, RoutedEventArgs e)
         {
+            //clears the text
+            runReceipt.Text = "";
+
+            //create bools for if the checkbox is checked
+            bool hasPepperoni = ckPepperoni.IsChecked.Value;
+            bool hasJalapeno = ckJalapeno.IsChecked.Value;
+            bool hasPineapple = ckPineapple.IsChecked.Value;
+            bool hasMushroom = ckMushroom.IsChecked.Value;
+            runReceipt.Text = "Toppings:\n";
+            if (hasPepperoni)
+            {
+                runReceipt.Text += "Pepperoni\n";
+            }
+            if (hasJalapeno)
+            {
+                runReceipt.Text += "Jalapeno\n";
+            }
+            if (hasPineapple)
+            {
+                runReceipt.Text += "Pineapple\n";
+            }
+            if (hasMushroom)
+            {
+                runReceipt.Text += "Mushroom\n";
+            }
 
         }
     }
