@@ -1,4 +1,26 @@
-﻿using System;
+﻿//Tyler Simpson
+//February 21 2023
+//Prog 2 Lecture 9 Notes
+
+//Check boxes and radio buttons both return a type of
+//Bool
+
+//How what property do you use to get the true / false value from your individual check boxes / radio buttons
+//IsChecked.Value
+
+//When using check boxes you need to use a ____ for each check box
+//
+
+//When working with radio buttons you need an ____ / _____ / _____ structure
+//
+
+//You need to _______ together radio buttons, otherwise they may not work properly
+//
+
+//You can use a ________ layout to accomplish this
+//
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +45,19 @@ namespace Lecture_9_Notes
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btnCheckBoxResults_Click(object sender, RoutedEventArgs e)
+        {
+            //checkboxname . IsChecked . Value to return results of check box being checked or not
+            bool isChecked = ckFirstCheckBox.IsChecked.Value;
+
+            MessageBox.Show(isChecked.ToString());
+        }
+
+        private void btnOrderPizza_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
